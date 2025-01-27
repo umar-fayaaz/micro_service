@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        GIT_CRED = 'git-cred' // GitHub token credentials ID
-        DOCKER_NETWORK = 'my_custom_network' // Custom network name
+        GIT_CRED = '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' // GitHub token credentials ID
+        DOCKER_NETWORK = 'umar' // Custom network name
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Checkout code from GitHub
-                    git credentialsId: "${GIT_CRED}", url: 'https://github.com/sakit333/microservices_project.git', branch: 'main'
+                    git credentialsId: "${GIT_CRED}", url: 'https://github.com/sakit333/microservices_project.git', branch: 'master'
                 }
             }
         }
