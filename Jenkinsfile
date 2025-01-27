@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Checkout code from GitHub
-                    git credentialsId: "${GIT_CRED}", url: 'https://github.com/sakit333/microservices_project.git', branch: 'master'
+                    git credentialsId: "${GIT_CRED}", url: 'https://github.com/umar-fayaaz/micro_service.git', branch: 'master'
                 }
             }
         }
