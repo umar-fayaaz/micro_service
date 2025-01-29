@@ -46,7 +46,7 @@ public class AuthController {
     @PostMapping("/logout")
     public String logout(Model model) {
         model.addAttribute("user", null); 
-        return "redirect:/auth/login";  
+        return "redirect:http://65.2.189.85:8083/auth/login";  
     }
 
     @GetMapping("/signup")
