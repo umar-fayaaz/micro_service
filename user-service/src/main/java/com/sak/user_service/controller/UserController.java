@@ -26,7 +26,7 @@ public class UserController {
     @PostMapping("/signup")
     public String signupUser(@ModelAttribute User user) {
         UserRepository.save(user);
-        return "redirect:/users/signup";
+        return "redirect:http://65.2.189.85:8082/users/signup";
     }
 
     @GetMapping("/login")
