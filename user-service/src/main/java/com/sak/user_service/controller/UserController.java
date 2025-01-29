@@ -32,11 +32,11 @@ public class UserController {
     @GetMapping("/login")
     public String login(Model model) {
         model.addAttribute("user", new User());
-        return "redirect:http://localhost:8083/auth/login";
+        return "redirect:http://65.2.189.85:8083/auth/login";
     }
 
     @GetMapping("/")
     public String home() {
-        return "redirect:http://localhost:8081";
+        return "redirect:http://65.2.189.85:8081";
     }
 }
