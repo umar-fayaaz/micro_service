@@ -35,7 +35,7 @@ public class AuthController {
         // Validate user
         if (user != null && user.getPassword().equals(password)) {
             model.addAttribute("user", user); 
-            return "redirect:http://localhost:8081";  
+            return "redirect:http://65.2.189.85:8081";  
         } else {
             model.addAttribute("error", "Invalid credentials!");  
             return "login";  
@@ -53,11 +53,11 @@ public class AuthController {
     public String signup(Model model) {
         model.addAttribute("user", new User());
         System.out.println("Signup Page from auth-service");
-        return "redirect:http://localhost:8082/users/signup";  
+        return "redirect:http://65.2.189.85:8082/users/signup";  
     }
 
     @GetMapping("/")
     public String home() {
-        return "redirect:http://localhost:8081/";
+        return "redirect:http://65.2.189.85:8081/";
     }
 }
